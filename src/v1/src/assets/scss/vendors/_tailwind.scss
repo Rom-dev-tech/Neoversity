@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// @include font-face('Robochyi Sans OF', '../images/sections/fonts/RobochyiSans-Regular', 400);
+// @include font-face('Robochyi Sans OF', '../images/sections/fonts/RobochyiSans-Medium', 500);
+// @include font-face('Robochyi Sans OF', '../images/sections/fonts/RobochyiSans-Semi', 600);
+// @include font-face('Robochyi Sans OF', '../images/sections/fonts/RobochyiSans-Bold', 700);
+// @include font-face('Robochyi Sans OF', '../images/sections/fonts/RobochyiSans-Heavy', 800);
+
+@layer base {
+  html {
+    @apply min-w-0 scroll-smooth;
+  }
+
+  body {
+    @apply bg-body font-montserrat text-[16px] font-normal leading-[20px] text-black xl:text-[24px] xl:leading-[30px];
+  }
+}
+
+@layer components {
+  .section {
+    @apply py-6 md:py-10 xl:py-16;
+  }
+
+  .section-title {
+    @apply mb-4 text-[20px] font-extrabold uppercase md:text-[32px] xl:mb-[32px] xl:text-[48px];
+  }
+
+  .btn {
+    @apply flex min-h-[80px] w-full items-center justify-center bg-accent text-center font-extrabold uppercase text-white duration-300 hover:bg-accent-hover focus:bg-accent-hover xl:min-h-[110px] xl:text-[24px];
+  }
+}

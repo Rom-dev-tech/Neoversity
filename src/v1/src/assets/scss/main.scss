@@ -1,0 +1,24 @@
+@use "sass:math";
+
+// UTILS
+@import "utils/mixins";
+
+// VENDORS
+@import "vendors/tailwind";
+@import "vendors/intTelInput";
+
+/*! purgecss start ignore */
+// @import 'vendors/slick-theme';
+// @import 'vendors/slick';
+/*! purgecss end ignore */
+
+// COMPONENTS
+@import "components/modal";
+@import "components/form";
+@import "components/input";
+// @import "components/accordion";
+// @import 'components/mobile-menu';
+
+// SECTIONS
+// @import "sections/header";
+/* <!-- import styles --> */

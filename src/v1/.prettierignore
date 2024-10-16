@@ -1,0 +1,8 @@
+# Ignore artifacts:
+build
+
+# Ignore utils.js file from js:
+src/assets/js/utils.js
+
+# Ignore input file from html:
+src/html/partials/components/macro/input.html

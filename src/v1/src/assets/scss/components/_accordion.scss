@@ -1,0 +1,30 @@
+.accordion__item {
+  background-repeat: no-repeat;
+  background-image: url("../images/accordion/arrow.svg");
+  background-size: 20px 20px;
+  background-position: top 20px right 20px;
+
+  @include mq(desktop) {
+    background-size: 32px 32px;
+    background-position: top 32px right 32px;
+  }
+
+  &[aria-expanded="false"] {
+    @apply duration-300 hover:saturate-200 focus:saturate-200;
+  }
+
+  &[aria-expanded="true"] {
+    background-image: url("../images/accordion/close.svg");
+  }
+
+  & .accordion__answer {
+    box-sizing: content-box;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 300ms linear;
+  }
+
+  &[aria-expanded="true"] .accordion__answer {
+    margin-top: 10px;
+  }
+}

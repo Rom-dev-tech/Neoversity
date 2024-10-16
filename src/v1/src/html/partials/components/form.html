@@ -1,0 +1,8 @@
+<form class="mt-6 text-lg" id="{{formId}}" novalidate autocomplete="on">
+  <div class="flex flex-wrap gap-6">{% block formFields %} {% endblock %}</div>
+  <button
+    class="mt-7 w-full rounded-2xl border-2 border-transparent bg-accent p-4 text-center text-[16px] font-bold leading-[1.5] text-white outline-none duration-300 ease-linear hover:border-accent hover:bg-transparent hover:text-accent focus:border-accent focus:bg-transparent focus:text-accent disabled:border-none disabled:bg-gray-200 disabled:hover:text-white md:text-[20px] md:leading-[1.2]"
+    type="submit">
+    {{ form.btnSubmit }}
+  </button>
+</form>

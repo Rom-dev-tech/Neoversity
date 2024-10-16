@@ -1,0 +1,90 @@
+[
+  {
+    "key": "loadingMessage",
+    "dict": {
+      "en": "Please wait a few seconds... almost got your request",
+      "uk": "Зачекайте декілька секунд… майже отримали Вашу заявку",
+      "pl": "Proszę czekać chwilę... niedługo otrzymaliśmy Twoją zgłoszenie",
+      "es": "Por favor espere unos segundos... casi obtuvimos su solicitud",
+      "ro": "Vă rugăm așteptați câteva secunde... aproximativ ați primit cererea dvs.",
+      "tr": "Lütfen birkaç saniye bekleyin... neredeyse isteğinizi aldım"
+    }
+  },
+  {
+    "key": "successMessage",
+    "dict": {
+      "en": "Got your request",
+      "uk": "Отримали заявку",
+      "pl": "Otrzymaliśmy Twoją zgłoszenie",
+      "es": "Casi obtuvimos su solicitud",
+      "ro": "Ați primit cererea dvs.",
+      "tr": "Talebini aldım"
+    }
+  },
+  {
+    "key": "errorMessage",
+    "dict": {
+      "en": "Error, something went wrong! Try again later.",
+      "uk": "Помилка, щось пішло не так! Спробуйте пізніше.",
+      "pl": "Błąd, coś poszło nie tak! Spróbuj ponownie później.",
+      "es": "Error, algo salió mal! Inténtalo de nuevo más tarde.",
+      "ro": "Eroare, ceva nu a mers bine! Încearcă mai târziu.",
+      "tr": "Hata, bir şeyler ters gitti! Daha sonra tekrar deneyin."
+    }
+  },
+  {
+    "key": "thanks",
+    "dict": {
+      "en": "Thank You!",
+      "uk": "Дякуємо!",
+      "pl": "Dziękujemy!",
+      "es": "¡Gracias!",
+      "ro": "Multumim!",
+      "tr": "Teşekkür ederim!"
+    }
+  },
+  {
+    "key": "reply",
+    "dict": {
+      "en": "We will reply to you as soon as possible.",
+      "uk": "Ми відповімо Вам найближчим часом.",
+      "pl": "Nasz zespół odpowie na Twoje zapytanie jak najszybciej.",
+      "es": "Nosotros responderemos a tu solicitud lo antes posible.",
+      "ro": "Vom răspunde la tine cât mai curând posibil.",
+      "tr": "Size en kısa sürede cevap vereceğiz."
+    }
+  },
+  {
+    "key": "tryAgain",
+    "dict": {
+      "en": "Please try again later.",
+      "uk": "Спробуйте пізніше.",
+      "pl": "Spróbuj ponownie później.",
+      "es": "Inténtalo de nuevo más tarde.",
+      "ro": "Încearcă mai târziu.",
+      "tr": "Lütfen daha sonra tekrar deneyiniz."
+    }
+  },
+  {
+    "key": "error",
+    "dict": {
+      "en": "Error!",
+      "uk": "Помилка!",
+      "pl": "Błąd!",
+      "es": "Error!",
+      "ro": "Eroare!",
+      "tr": "Hata!"
+    }
+  },
+  {
+    "key": "emailNotExists",
+    "dict": {
+      "en": "Email does not exist",
+      "uk": "Email не існує",
+      "pl": "Email nie istnieje",
+      "es": "Email no existe",
+      "ro": "Email nu există",
+      "tr": "E-posta mevcut değil"
+    }
+  }
+]

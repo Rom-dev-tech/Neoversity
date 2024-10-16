@@ -1,0 +1,19 @@
+{% set component = components.timer %}
+
+<div
+  class="flex max-w-[282px] items-center justify-between rounded-[16px] bg-[#273DA4] px-3 py-[14px] text-white"
+  data-timer="{{component.value}}">
+  <h3 class="mr-2 text-[12px]">{{component.title}}</h3>
+  <ul class="flex justify-end gap-1">
+    {% for item in component.items %}
+    <li class="grid text-xl last:text-accent">
+      <span class="w-[32px] text-center font-bold" {{item.attribute}}>00</span>
+      <span class="text-center text-[8px] font-semibold leading-[1.2]"
+        >{{item.text}}</span
+      >
+    </li>
+    {% if not loop.last %}
+    <li class="font-bold text-[#ffffff4d]">:</li>
+    {% endif %} {% endfor %}
+  </ul>
+</div>

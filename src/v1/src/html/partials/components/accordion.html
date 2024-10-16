@@ -1,0 +1,18 @@
+{% set component = components.accordion %}
+
+<ul class="flex flex-col gap-2 xl:gap-4">
+  {% for item in component.items %}
+  <li
+    class="accordion__item flex cursor-pointer flex-col items-center justify-center overflow-hidden rounded-[32px] bg-[#FAF4E6] p-5 pr-[56px] text-base xl:p-[32px] xl:pr-[94px] xl:text-2xl"
+    aria-expanded="false">
+    <button
+      class="pointer-events-none w-full text-left font-extrabold uppercase leading-[1.25] xl:text-[24px]"
+      type="button">
+      {{item.question}}
+    </button>
+    <p class="accordion__answer cursor-auto font-medium leading-[1.2]">
+      {{item.answer}}
+    </p>
+  </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,86 @@
+{
+  "inputs": [
+    {
+      "title": "Ім'я *",
+      "type": "text",
+      "name": "name",
+      "placeholder": "Ім'я",
+      "dataField": "name",
+      "required": true,
+      "autocomplete": "name"
+    },
+    {
+      "title": "Телефон *",
+      "type": "tel",
+      "name": "phone",
+      "placeholder": "",
+      "dataField": "phone",
+      "required": true,
+      "autocomplete": "tel"
+    },
+    {
+      "title": "Пошта *",
+      "type": "email",
+      "name": "email",
+      "placeholder": "email@gmail.com",
+      "dataField": "email",
+      "required": true,
+      "autocomplete": "email"
+    },
+    {
+      "title": "Додатковий номер або нік в Телеграм, щоб ми точно вас знайшли",
+      "type": "text",
+      "name": "telegram",
+      "dataField": "text",
+      "required": false
+    },
+    {
+      "title": "Що б ви хотіли дізнатися на консультації/зручний час для контакту?",
+      "type": "text",
+      "name": "notes",
+      "dataField": "text",
+      "required": false
+    },
+    {
+      "title": "Згоден з ",
+      "type": "checkbox",
+      "name": "agree",
+      "dataField": "checkbox",
+      "required": true,
+      "class": "input-wrap-checkbox",
+      "linkSeparator": "та",
+      "links": [
+        {
+          "text": "Політика конфіденційності",
+          "href": "https://goit.global/ua/privacy-policy/"
+        },
+        {
+          "text": "Умови користування послугами",
+          "href": "https://goit.global/ua/terms-of-use/"
+        }
+      ]
+    },
+    {
+      "radio": [
+        {
+          "title": "Я, підліток",
+          "type": "radio",
+          "name": "user",
+          "dataField": "radio",
+          "required": true,
+          "class": "input-wrap-radio",
+          "value": "teen"
+        },
+        {
+          "title": "Батько / мати",
+          "type": "radio",
+          "name": "user",
+          "dataField": "radio",
+          "required": true,
+          "class": "input-wrap-radio",
+          "value": "parents"
+        }
+      ]
+    }
+  ]
+}

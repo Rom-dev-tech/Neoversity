@@ -1,0 +1,130 @@
+{
+  "page": {
+    "LANG_EXAMPLE": "Украина(uk), Польша(pl), Румыния(ro), Турция(tr)",
+    "lang": "uk"
+  },
+  "header": {
+    "id": "header"
+  },
+  "components": {
+    "dateDay": "<?= $START_DATE_DAY ?>",
+    "dateMonth": "<?= $START_DATE_MONTH ?>",
+    "dateTime": "<?= $START_TIME ?>",
+    "logo": {
+      "link_logo_aria": "Посилання на головну сторінку сайту",
+      "logo_aria": "Логотип сайту"
+    },
+    "timer": {
+      "value": "<?= $START_DATE_UTC ?>",
+      "title": "пропозиція доступна ще",
+      "items": [
+        {
+          "attribute": "data-day",
+          "text": "днів"
+        },
+        {
+          "attribute": "data-hour",
+          "text": "годин"
+        },
+        {
+          "attribute": "data-min",
+          "text": "хвилин"
+        },
+        {
+          "attribute": "data-sec",
+          "text": "секунд"
+        },
+        {
+          "attribute": "data-ms",
+          "text": "мсек"
+        }
+      ]
+    },
+    "accordion": {
+      "items": [
+        {
+          "question": "111",
+          "answer": "111"
+        },
+        {
+          "question": "222",
+          "answer": "222"
+        },
+        {
+          "question": "333",
+          "answer": "333"
+        }
+      ]
+    },
+    "navigation": {
+      "btnAria": "кнопка мобільного меню",
+      "items": [
+        {
+          "link": "#",
+          "title": "homePage"
+        },
+        {
+          "link": "#",
+          "title": "somePage"
+        }
+      ]
+    }
+  },
+  "FORM_EXPAMPLE": "Готовые формы с переводами - allTranslatedForm.json. Все существующие поля для формы - allFormInputs.json",
+  "form": {
+    "id": "modalForm",
+    "btnCloseAria": "кнопка закриття модального вікна",
+    "title": "Реєстрація",
+    "steps": ["1", "2", "3"],
+    "INPUTS_EXPAMPLE": "Все доступные поля для формы лежат в файле 'allFormInputs.json' - скопируйте нужный обьект, и вставьте его ниже в массив inputs",
+    "inputs": [
+      {
+        "title": "Ім'я *",
+        "type": "text",
+        "name": "name",
+        "placeholder": "Ім'я",
+        "dataField": "name",
+        "required": true,
+        "autocomplete": "name"
+      },
+      {
+        "title": "Телефон *",
+        "type": "tel",
+        "name": "phone",
+        "placeholder": "",
+        "dataField": "phone",
+        "required": true,
+        "autocomplete": "tel"
+      },
+      {
+        "title": "Пошта *",
+        "type": "email",
+        "name": "email",
+        "placeholder": "email@gmail.com",
+        "dataField": "email",
+        "required": true,
+        "autocomplete": "email"
+      },
+      {
+        "title": "Згоден з ",
+        "type": "checkbox",
+        "name": "agree",
+        "dataField": "checkbox",
+        "required": true,
+        "class": "input-wrap-checkbox",
+        "linkSeparator": "та",
+        "links": [
+          {
+            "text": "Політика конфеденційності",
+            "href": "https://goit.global/ua/privacy-policy/"
+          },
+          {
+            "text": "Умови користування послугами",
+            "href": "https://goit.global/ua/terms-of-use/"
+          }
+        ]
+      }
+    ],
+    "btnSubmit": "Зареєструватися"
+  }
+}
