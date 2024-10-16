@@ -8,7 +8,11 @@
   },
   "register": {
     "id": "register",
-    "title": "<span class='text-accent'>Хочу вступити ></span> | до Neoversity"
+    "title": "Хочу вступити > <span class=\"block pl-8 text-[#b5bcc2]\">| до Neoversity</span>",
+    "text": "Який перший крок?",
+    "description": "Залиште свої дані — отримайте особисту консультацію безкоштовно",
+    "bottomText": "Як вам зручніше спілкуватись?",
+    "btnSubmit": "/ Відправити"
   },
   "components": {
     "dateDay": "<?= $START_DATE_DAY ?>",

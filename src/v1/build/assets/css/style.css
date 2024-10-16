@@ -545,11 +545,38 @@ body {
 .visible {
   visibility: visible;
 }
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.bottom-0 {
+  bottom: 0px;
+}
+.left-0 {
+  left: 0px;
+}
+.z-10 {
+  z-index: 10;
+}
+.z-30 {
+  z-index: 30;
+}
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+.ml-2 {
+  margin-left: 0.5rem;
+}
 .mr-2 {
   margin-right: 0.5rem;
 }
 .mt-12 {
   margin-top: 3rem;
+}
+.mt-2 {
+  margin-top: 0.5rem;
 }
 .mt-6 {
   margin-top: 1.5rem;
@@ -572,6 +599,18 @@ body {
 .h-2 {
   height: 0.5rem;
 }
+.h-4 {
+  height: 1rem;
+}
+.h-\[130px\] {
+  height: 130px;
+}
+.h-\[50px\] {
+  height: 50px;
+}
+.w-4 {
+  width: 1rem;
+}
 .w-\[32px\] {
   width: 32px;
 }
@@ -581,6 +620,9 @@ body {
 .w-max {
   width: -moz-max-content;
   width: max-content;
+}
+.max-w-\[270px\] {
+  max-width: 270px;
 }
 .max-w-\[282px\] {
   max-width: 282px;
@@ -624,11 +666,17 @@ body {
 .gap-6 {
   gap: 1.5rem;
 }
+.gap-\[10px\] {
+  gap: 10px;
+}
 .overflow-hidden {
   overflow: hidden;
 }
 .rounded-2xl {
   border-radius: 1rem;
+}
+.rounded-\[10px\] {
+  border-radius: 10px;
 }
 .rounded-\[16px\] {
   border-radius: 16px;
@@ -636,20 +684,29 @@ body {
 .rounded-\[32px\] {
   border-radius: 32px;
 }
-.rounded-\[30px\] {
-  border-radius: 30px;
-}
-.rounded-\[10px\] {
-  border-radius: 10px;
-}
 .border {
   border-width: 1px;
 }
 .border-2 {
   border-width: 2px;
 }
+.border-l {
+  border-left-width: 1px;
+}
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+.border-gray-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
 .border-transparent {
   border-color: transparent;
+}
+.bg-\[\#2400ff\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(36 0 255 / var(--tw-bg-opacity));
 }
 .bg-\[\#273DA4\] {
   --tw-bg-opacity: 1;
@@ -663,12 +720,12 @@ body {
   --tw-bg-opacity: 1;
   background-color: rgb(0 216 91 / var(--tw-bg-opacity));
 }
+.bg-transparent {
+  background-color: transparent;
+}
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-.bg-transparent {
-  background-color: transparent;
 }
 .p-4 {
   padding: 1rem;
@@ -676,26 +733,50 @@ body {
 .p-5 {
   padding: 1.25rem;
 }
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
-.py-\[14px\] {
-  padding-top: 14px;
-  padding-bottom: 14px;
+.px-\[10px\] {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.px-\[26px\] {
+  padding-left: 26px;
+  padding-right: 26px;
 }
 .px-\[30px\] {
   padding-left: 30px;
   padding-right: 30px;
 }
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.py-\[14px\] {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.py-\[50px\] {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.pl-4 {
+  padding-left: 1rem;
+}
+.pl-8 {
+  padding-left: 2rem;
+}
 .pr-\[56px\] {
   padding-right: 56px;
-}
-.pt-\[50px\] {
-  padding-top: 50px;
-}
-.pb-\[55px\] {
-  padding-bottom: 55px;
 }
 .text-left {
   text-align: left;
@@ -703,14 +784,26 @@ body {
 .text-center {
   text-align: center;
 }
+.font-montserrat {
+  font-family: Montserrat, sans-serif;
+}
+.font-unbounded {
+  font-family: Unbounded, sans-serif;
+}
 .text-\[12px\] {
   font-size: 12px;
+}
+.text-\[14px\] {
+  font-size: 14px;
 }
 .text-\[16px\] {
   font-size: 16px;
 }
 .text-\[20px\] {
   font-size: 20px;
+}
+.text-\[24px\] {
+  font-size: 24px;
 }
 .text-\[8px\] {
   font-size: 8px;
@@ -736,6 +829,9 @@ body {
 .font-medium {
   font-weight: 500;
 }
+.font-normal {
+  font-weight: 400;
+}
 .font-semibold {
   font-weight: 600;
 }
@@ -751,6 +847,23 @@ body {
 .leading-\[1\.5\] {
   line-height: 1.5;
 }
+.leading-\[14px\] {
+  line-height: 14px;
+}
+.tracking-\[-0\.08em\] {
+  letter-spacing: -0.08em;
+}
+.tracking-\[0\.02em\] {
+  letter-spacing: 0.02em;
+}
+.text-\[\#31343a\] {
+  --tw-text-opacity: 1;
+  color: rgb(49 52 58 / var(--tw-text-opacity));
+}
+.text-\[\#b5bcc2\] {
+  --tw-text-opacity: 1;
+  color: rgb(181 188 194 / var(--tw-text-opacity));
+}
 .text-\[\#ffffff4d\] {
   color: #ffffff4d;
 }
@@ -762,6 +875,10 @@ body {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
+.text-blue-600 {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
+}
 .text-loading {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -769,6 +886,14 @@ body {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.placeholder-\[\#aab3b9\]::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(170 179 185 / var(--tw-placeholder-opacity));
+}
+.placeholder-\[\#aab3b9\]::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(170 179 185 / var(--tw-placeholder-opacity));
 }
 .outline-none {
   outline: 2px solid transparent;
@@ -2399,7 +2524,16 @@ input[type=tel].input-field {
   line-height: 1.1;
 }
 /*! purgecss end ignore */
+.register-wrapper__text {
+  transform: translate(0, -35px);
+}
 /* <!-- import styles --> */
+.placeholder\:text-\[12px\]::-moz-placeholder {
+  font-size: 12px;
+}
+.placeholder\:text-\[12px\]::placeholder {
+  font-size: 12px;
+}
 .last\:text-accent:last-child {
   --tw-text-opacity: 1;
   color: rgb(0 216 91 / var(--tw-text-opacity));
@@ -2436,6 +2570,10 @@ input[type=tel].input-field {
   --tw-text-opacity: 1;
   color: rgb(0 216 91 / var(--tw-text-opacity));
 }
+.focus\:ring-blue-500:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity));
+}
 .disabled\:border-none:disabled {
   border-style: none;
 }
@@ -2448,11 +2586,30 @@ input[type=tel].input-field {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 @media (min-width: 768px) {
+  .md\:mb-\[-15px\] {
+    margin-bottom: -15px;
+  }
+  .md\:flex {
+    display: flex;
+  }
   .md\:h-8 {
     height: 2rem;
   }
   .md\:w-8 {
     width: 2rem;
+  }
+  .md\:w-\[287px\] {
+    width: 287px;
+  }
+  .md\:w-\[345px\] {
+    width: 345px;
+  }
+  .md\:justify-between {
+    justify-content: space-between;
+  }
+  .md\:px-\[40px\] {
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .md\:text-\[20px\] {
     font-size: 20px;
@@ -2460,16 +2617,56 @@ input[type=tel].input-field {
   .md\:text-\[24px\] {
     font-size: 24px;
   }
+  .md\:text-\[32px\] {
+    font-size: 32px;
+  }
   .md\:leading-\[1\.2\] {
     line-height: 1.2;
   }
+  .md\:leading-\[48px\] {
+    line-height: 48px;
+  }
+  .md\:tracking-\[-0\.06em\] {
+    letter-spacing: -0.06em;
+  }
 }
 @media (min-width: 1280px) {
+  .xl\:mb-5 {
+    margin-bottom: 1.25rem;
+  }
+  .xl\:mb-\[-5px\] {
+    margin-bottom: -5px;
+  }
+  .xl\:h-\[192px\] {
+    height: 192px;
+  }
+  .xl\:w-\[312px\] {
+    width: 312px;
+  }
+  .xl\:w-\[545px\] {
+    width: 545px;
+  }
+  .xl\:max-w-\[320px\] {
+    max-width: 320px;
+  }
   .xl\:gap-4 {
     gap: 1rem;
   }
   .xl\:p-\[32px\] {
     padding: 32px;
+  }
+  .xl\:py-\[65px\] {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+  .xl\:pl-8 {
+    padding-left: 2rem;
+  }
+  .xl\:pl-\[65px\] {
+    padding-left: 65px;
+  }
+  .xl\:pr-\[195px\] {
+    padding-right: 195px;
   }
   .xl\:pr-\[94px\] {
     padding-right: 94px;
@@ -2478,14 +2675,55 @@ input[type=tel].input-field {
     font-size: 1.5rem;
     line-height: 2rem;
   }
+  .xl\:text-\[14px\] {
+    font-size: 14px;
+  }
+  .xl\:text-\[16px\] {
+    font-size: 16px;
+  }
   .xl\:text-\[24px\] {
     font-size: 24px;
   }
+  .xl\:text-\[50px\] {
+    font-size: 50px;
+  }
+  .xl\:leading-\[0\.02em\] {
+    line-height: 0.02em;
+  }
+  .xl\:leading-\[16px\] {
+    line-height: 16px;
+  }
+  .xl\:leading-\[48px\] {
+    line-height: 48px;
+  }
+  .xl\:tracking-\[-0\.04em\] {
+    letter-spacing: -0.04em;
+  }
+  .xl\:tracking-\[0\.02em\] {
+    letter-spacing: 0.02em;
+  }
+  .xl\:placeholder\:text-\[16px\]::-moz-placeholder {
+    font-size: 16px;
+  }
+  .xl\:placeholder\:text-\[16px\]::placeholder {
+    font-size: 16px;
+  }
 }
 @media (max-width: 767.98px) {
+  .smOnly\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+  .smOnly\:mb-2 {
+    margin-bottom: 0.5rem;
+  }
   .smOnly\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279.98px) {
+  .mdOnly\:h-\[41px\] {
+    height: 41px;
   }
 }
 @media (max-width: 1279.98px) {

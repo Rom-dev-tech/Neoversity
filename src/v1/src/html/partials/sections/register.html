@@ -1,8 +1,122 @@
 {% set s = register %}
 
 <section class="{{s.id}}">
-  <div class="container">
+  <div class="container px-[10px]">
+    <!-- block -->
     <div
-      class="register-wrapper rounded-[10px] bg-transparent px-[30px] pb-[55px] pt-[50px]"></div>
+      class="register-wrapper relative rounded-[10px] border border-black bg-transparent px-[30px] py-[50px] md:flex md:justify-between md:px-[40px] xl:py-[65px] xl:pl-[65px] xl:pr-[195px]">
+      <!-- left-side -->
+      <div class="md:w-[345px] xl:w-[545px]">
+        <!-- title -->
+        <h2
+          class="font-unbounded text-[24px] font-normal uppercase tracking-[-0.08em] text-[#31343a] md:text-[32px] md:leading-[48px] md:tracking-[-0.06em] xl:text-[50px] xl:leading-[48px] xl:tracking-[-0.04em]">
+          {{s.title}}
+        </h2>
+
+        <!-- text -->
+        <div
+          class="register-wrapper__text flex h-[130px] flex-col justify-end border-l border-black font-montserrat text-[14px] font-bold uppercase leading-[14px] text-[#31343a] xl:h-[192px] xl:text-[16px] xl:leading-[16px] smOnly:mb-10">
+          <p class="mb-3 pl-4 xl:mb-5 xl:pl-8">{{s.text}}</p>
+          <p class="max-w-[270px] pl-4 font-normal xl:max-w-[320px] xl:pl-8">
+            {{s.description}}
+          </p>
+        </div>
+      </div>
+
+      <!-- right-side -->
+      <div class="md:w-[287px] xl:w-[312px]">
+        <!-- form -->
+        <form class="register-wrapper__form flex flex-col gap-[10px]">
+          <!-- fields -->
+          <label for="userName">
+            <input
+              class="register-input h-[50px] w-full border border-black px-[26px] py-4 placeholder-[#aab3b9] placeholder:text-[12px] xl:placeholder:text-[16px] mdOnly:h-[41px]"
+              id="userName"
+              type="text"
+              name="userName"
+              placeholder="Ім'я" />
+          </label>
+
+          <label for="userPhone">
+            <input
+              class="register-input h-[50px] w-full border border-black px-[26px] py-4 placeholder-[#aab3b9] placeholder:text-[12px] xl:placeholder:text-[16px] mdOnly:h-[41px]"
+              id="userPhone"
+              type="tel"
+              name="userPhone"
+              placeholder="Телефон" />
+          </label>
+
+          <label for="userEmail">
+            <input
+              class="register-input h-[50px] w-full border border-black px-[26px] py-4 placeholder-[#aab3b9] placeholder:text-[12px] xl:placeholder:text-[16px] mdOnly:h-[41px]"
+              id="userEmail"
+              type="email"
+              name="userEmail"
+              placeholder="Email" />
+          </label>
+
+          <!-- text-checkbox -->
+          <p
+            class="font-unbounded text-[12px] font-medium tracking-[0.02em] text-black xl:text-[14px] xl:tracking-[0.02em] smOnly:mb-2">
+            {{s.bottomText}}
+          </p>
+
+          <div class="flex items-center">
+            <input
+              id="checkbox1"
+              type="checkbox"
+              class="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-500" />
+            <label
+              for="checkbox1"
+              class="ml-2 font-montserrat text-[12px] text-black xl:text-[14px]"
+              >зателефонуйте мені</label
+            >
+          </div>
+
+          <div class="flex items-center">
+            <input
+              id="checkbox2"
+              type="checkbox"
+              class="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-500" />
+            <label
+              for="checkbox2"
+              class="ml-2 font-montserrat text-[12px] text-black xl:text-[14px]"
+              >напишіть в месенджер</label
+            >
+          </div>
+
+          <!-- button -->
+          <button
+            class="relative z-30 mt-2 bg-[#2400ff] px-10 py-6 font-montserrat text-[16px] font-semibold text-white md:mb-[-15px] xl:mb-[-5px]"
+            type="submit">
+            {{s.btnSubmit}}
+          </button>
+        </form>
+
+        <!-- img -->
+        <picture class="absolute bottom-0 left-0 z-10 w-full">
+          <source
+            media="(min-width: 1280px)"
+            type="image/webp"
+            srcset="
+              ./assets/images/register/register-bg-xl.webp    1x,
+              ./assets/images/register/register-bg-xl@2x.webp 2x
+            " />
+          <source
+            media="(min-width: 768px)"
+            type="image/webp"
+            srcset="
+              ./assets/images/register/register-bg-md.webp    1x,
+              ./assets/images/register/register-bg-md@2x.webp 2x
+            " />
+          <img
+            class="w-full"
+            src="./assets/images/register/register-bg.webp"
+            srcset="./assets/images/register/register-bg@2x.webp 2x"
+            alt=""
+            loading="lazy" />
+        </picture>
+      </div>
+    </div>
   </div>
 </section>
