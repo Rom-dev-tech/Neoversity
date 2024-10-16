@@ -47,7 +47,7 @@ module.exports = {
     // FONTS
     fontFamily: {
       montserrat: ["Montserrat", "sans-serif"], // font-montserrat
-      // robochyi: ['Robochyi Sans OF', 'sans-serif'], // font-robochyi
+      unbounded: ["Unbounded", "sans-serif"],
     },
   },
   plugins: [],

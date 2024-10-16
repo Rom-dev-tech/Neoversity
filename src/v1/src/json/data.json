@@ -6,6 +6,10 @@
   "header": {
     "id": "header"
   },
+  "register": {
+    "id": "register",
+    "title": "<span class='text-accent'>Хочу вступити ></span> | до Neoversity"
+  },
   "components": {
     "dateDay": "<?= $START_DATE_DAY ?>",
     "dateMonth": "<?= $START_DATE_MONTH ?>",

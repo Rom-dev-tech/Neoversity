@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,shrink-to-fit=no" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="page"> 
+
+<header class="header">
+  <div class="container">
+    <h1></h1>
+  </div>
+</header>
+
+
+<main>
+
+<section class="register">
+  <div class="container">
+    <div
+      class="register-wrapper rounded-[10px] bg-transparent px-[30px] pb-[55px] pt-[50px]"></div>
+  </div>
+</section>
+</main>
+
+<footer class="">
+  <div class="container"></div>
+</footer>
+ </div>
+
+    
+<div class="backdrop is-hidden smOnly:px-5" data-modal>
+  <div class="modal bg-white text-black">
+    <button
+      class="modal-close-btn"
+      type="button"
+      data-modal-close
+      aria-label="кнопка закриття модального вікна">
+      <svg
+        class="md:h-8 md:w-8"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg">
+        <rect
+          x="21.7969"
+          y="4.79492"
+          width="24"
+          height="3.71178"
+          rx="1.85589"
+          transform="rotate(135 21.7969 4.79492)"
+          fill="" />
+        <rect
+          x="19.1719"
+          y="21.7676"
+          width="24"
+          height="3.71178"
+          rx="1.85589"
+          transform="rotate(-135 19.1719 21.7676)"
+          fill="" />
+      </svg>
+    </button>
+
+    <h2 class="text-[20px] font-bold leading-[1.2] md:text-[24px]">
+      Реєстрація
+    </h2>
+
+    <!-- step -->
+    <!--  
+
+<ul class="steps-bar list-none" data-modalForm-steps>
+  
+  <li class="item active">1</li>
+  
+  <li class="item ">2</li>
+  
+  <li class="item ">3</li>
+  
+</ul>
+
+ -->
+
+    <!-- formfields -->
+    <form class="mt-6 text-lg" id="modalForm" novalidate autocomplete="on">
+  <div class="flex flex-wrap gap-6">   
+
+<div class="input-wrap ">
+  <!-- ➡️ IF select -->
+  
+  
+  <label class="input-label" for="modalForm_input_name">Ім'я *</label>
+  
+  <input
+    class="input-field"
+    type="text"
+    id="modalForm_input_name"
+    name="name"
+    data-field="name"
+    data-type="text"
+     required="" 
+    
+    
+     placeholder="Ім'я" 
+     autocomplete="name" 
+
+  />
+  
+</div>
+  
+
+<div class="input-wrap ">
+  <!-- ➡️ IF select -->
+  
+  
+  <label class="input-label" for="modalForm_input_phone">Телефон *</label>
+  
+  <input
+    class="input-field"
+    type="tel"
+    id="modalForm_input_phone"
+    name="phone"
+    data-field="phone"
+    data-type="tel"
+     required="" 
+    
+    
+    
+     autocomplete="tel" 
+
+  />
+  
+</div>
+  
+
+<div class="input-wrap ">
+  <!-- ➡️ IF select -->
+  
+  
+  <label class="input-label" for="modalForm_input_email">Пошта *</label>
+  
+  <input
+    class="input-field"
+    type="email"
+    id="modalForm_input_email"
+    name="email"
+    data-field="email"
+    data-type="email"
+     required="" 
+    
+    
+     placeholder="email@gmail.com" 
+     autocomplete="email" 
+
+  />
+  
+</div>
+  
+
+<div class="input-wrap input-wrap-checkbox">
+  <!-- ➡️ IF select -->
+  
+  <label class="input-label-checkbox">
+    <input
+      class="sr-only"
+      type="checkbox"
+      id="modalForm_input_agree"
+      name="agree"
+      value="agree"
+      data-field="checkbox"
+       required="" 
+    />
+    <span class="checkbox"></span>
+    Згоден з 
+    
+    <a
+      class="text-accent"
+      href="https://goit.global/ua/privacy-policy/"
+      target="_blank"
+      rel="noopener noreferrer nofollow"
+    >
+      Політика конфеденційності
+    </a>
+    та
+    
+    <a
+      class="text-accent"
+      href="https://goit.global/ua/terms-of-use/"
+      target="_blank"
+      rel="noopener noreferrer nofollow"
+    >
+      Умови користування послугами
+    </a>
+    
+    
+  </label>
+
+  <!-- ➡️ ELIF radio -->
+  
+</div>
+  </div>
+  <button
+    class="mt-7 w-full rounded-2xl border-2 border-transparent bg-accent p-4 text-center text-[16px] font-bold leading-[1.5] text-white outline-none duration-300 ease-linear hover:border-accent hover:bg-transparent hover:text-accent focus:border-accent focus:bg-transparent focus:text-accent disabled:border-none disabled:bg-gray-200 disabled:hover:text-white md:text-[20px] md:leading-[1.2]"
+    type="submit">
+    Зареєструватися
+  </button>
+</form>
+
+  </div>
+</div>
+
+
+    <script src="./assets/js/app.min.js"></script>
+  </body>
+</html>
