@@ -2711,6 +2711,55 @@ input[type=tel].input-field {
     font-size: 16px;
   }
 }
+@media (min-width: 1920px) {
+  .\36xl\:mb-\[2px\] {
+    margin-bottom: 2px;
+  }
+  .\36xl\:h-\[62px\] {
+    height: 62px;
+  }
+  .\36xl\:h-\[67px\] {
+    height: 67px;
+  }
+  .\36xl\:w-\[645px\] {
+    width: 645px;
+  }
+  .\36xl\:w-\[650px\] {
+    width: 650px;
+  }
+  .\36xl\:w-\[700px\] {
+    width: 700px;
+  }
+  .\36xl\:w-\[421px\] {
+    width: 421px;
+  }
+  .\36xl\:gap-4 {
+    gap: 1rem;
+  }
+  .\36xl\:px-\[70px\] {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .\36xl\:py-\[75px\] {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  .\36xl\:pl-\[112px\] {
+    padding-left: 112px;
+  }
+  .\36xl\:pr-\[315px\] {
+    padding-right: 315px;
+  }
+  .\36xl\:text-\[60px\] {
+    font-size: 60px;
+  }
+  .\36xl\:leading-\[65px\] {
+    line-height: 65px;
+  }
+  .\36xl\:tracking-\[-0\.03em\] {
+    letter-spacing: -0.03em;
+  }
+}
 @media (max-width: 767.98px) {
   .smOnly\:mb-10 {
     margin-bottom: 2.5rem;
