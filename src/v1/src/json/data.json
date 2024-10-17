@@ -19,6 +19,31 @@
     "title": "<span class=\"block pl-[100px] md:pl-[60px] xl:pl-[230px]\">// що говорять</span> <span class=\"block tracking-[-0.09em] md:tracking-[-0.06em] xl:tracking-[-0.04em] 6xl:tracking-[-0.03em]\"> студенти Neoversity</span>",
     "text": "нас обирають айтівці, що вже працюють в топ компаніях та продовжують прагнути більшого"
   },
+  "lectors": {
+    "title": "Зростайте в оточенні <span class=\"block pl-8 md:pl-[150px] xl:pl-[60px] 6xl:pl-[360px]\"> успішних айтівців //</span>",
+    "text": "Ретельно добираємо викладачів-практиків. Регулярно запрошуємо зіркових лекторів IT, інвесторів, CEO",
+    "list": [
+      {
+        "img": "img-1",
+        "title": "Сергій Борона",
+        "text": "Head of Security <span class=\"block text-black\">Ciklum</span>",
+        "icon": 1
+      },
+      {
+        "img": "img-2",
+        "title": "Володимир Голомб",
+        "text": "Lead Data Scientist, ML-Ops Engineer <span class=\"block text-black\">RBC Group</span>",
+        "icon": 2
+      },
+      {
+        "img": "img-3",
+        "title": "Антон Чорний",
+        "text": "CEO <span class=\"block text-black\">GoIT Global</span>",
+        "icon": 3
+      }
+    ],
+    "btnSubmit": "/ Більше про викладачів"
+  },
   "components": {
     "dateDay": "<?= $START_DATE_DAY ?>",
     "dateMonth": "<?= $START_DATE_MONTH ?>",
