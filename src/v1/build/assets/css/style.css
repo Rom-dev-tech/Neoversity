@@ -2612,9 +2612,6 @@ input[type=tel].input-field {
   .md\:h-8 {
     height: 2rem;
   }
-  .md\:h-\[178px\] {
-    height: 178px;
-  }
   .md\:w-8 {
     width: 2rem;
   }
@@ -2630,30 +2627,21 @@ input[type=tel].input-field {
   .md\:w-\[370px\] {
     width: 370px;
   }
-  .md\:max-w-\[297px\] {
-    max-width: 297px;
-  }
   .md\:max-w-\[275px\] {
     max-width: 275px;
   }
   .md\:justify-between {
     justify-content: space-between;
   }
-  .md\:border-none {
-    border-style: none;
-  }
   .md\:px-\[40px\] {
     padding-left: 40px;
     padding-right: 40px;
   }
-  .md\:pl-\[60px\] {
-    padding-left: 60px;
-  }
-  .md\:pl-8 {
-    padding-left: 2rem;
-  }
   .md\:pl-0 {
     padding-left: 0px;
+  }
+  .md\:pl-\[60px\] {
+    padding-left: 60px;
   }
   .md\:text-\[20px\] {
     font-size: 20px;
@@ -2675,6 +2663,9 @@ input[type=tel].input-field {
   }
 }
 @media (min-width: 1280px) {
+  .xl\:mb-2 {
+    margin-bottom: 0.5rem;
+  }
   .xl\:mb-5 {
     margin-bottom: 1.25rem;
   }
@@ -2684,26 +2675,23 @@ input[type=tel].input-field {
   .xl\:mr-\[105px\] {
     margin-right: 105px;
   }
-  .xl\:mb-2 {
-    margin-bottom: 0.5rem;
+  .xl\:h-\[178px\] {
+    height: 178px;
   }
   .xl\:h-\[192px\] {
     height: 192px;
   }
-  .xl\:h-\[178px\] {
-    height: 178px;
-  }
   .xl\:w-\[312px\] {
     width: 312px;
+  }
+  .xl\:w-\[325px\] {
+    width: 325px;
   }
   .xl\:w-\[545px\] {
     width: 545px;
   }
   .xl\:w-\[740px\] {
     width: 740px;
-  }
-  .xl\:w-\[325px\] {
-    width: 325px;
   }
   .xl\:max-w-\[320px\] {
     max-width: 320px;
@@ -2721,6 +2709,9 @@ input[type=tel].input-field {
   .xl\:pl-8 {
     padding-left: 2rem;
   }
+  .xl\:pl-\[230px\] {
+    padding-left: 230px;
+  }
   .xl\:pl-\[65px\] {
     padding-left: 65px;
   }
@@ -2729,12 +2720,6 @@ input[type=tel].input-field {
   }
   .xl\:pr-\[94px\] {
     padding-right: 94px;
-  }
-  .xl\:pl-\[230px\] {
-    padding-left: 230px;
-  }
-  .xl\:pl-10 {
-    padding-left: 2.5rem;
   }
   .xl\:text-2xl {
     font-size: 1.5rem;
@@ -2778,11 +2763,11 @@ input[type=tel].input-field {
   .\36xl\:mb-\[2px\] {
     margin-bottom: 2px;
   }
-  .\36xl\:ml-\[190px\] {
-    margin-left: 190px;
-  }
   .\36xl\:mr-\[190px\] {
     margin-right: 190px;
+  }
+  .\36xl\:h-\[193px\] {
+    height: 193px;
   }
   .\36xl\:h-\[67px\] {
     height: 67px;
@@ -2790,23 +2775,17 @@ input[type=tel].input-field {
   .\36xl\:h-\[766px\] {
     height: 766px;
   }
-  .\36xl\:h-\[193px\] {
-    height: 193px;
-  }
   .\36xl\:w-\[421px\] {
     width: 421px;
+  }
+  .\36xl\:w-\[673px\] {
+    width: 673px;
   }
   .\36xl\:w-\[700px\] {
     width: 700px;
   }
-  .\36xl\:w-\[842px\] {
-    width: 842px;
-  }
   .\36xl\:w-\[865px\] {
     width: 865px;
-  }
-  .\36xl\:w-\[673px\] {
-    width: 673px;
   }
   .\36xl\:max-w-\[310px\] {
     max-width: 310px;
@@ -2822,26 +2801,23 @@ input[type=tel].input-field {
     padding-top: 75px;
     padding-bottom: 75px;
   }
+  .\36xl\:pb-\[120px\] {
+    padding-bottom: 120px;
+  }
   .\36xl\:pl-\[112px\] {
     padding-left: 112px;
   }
   .\36xl\:pr-\[315px\] {
     padding-right: 315px;
   }
-  .\36xl\:pb-\[120px\] {
-    padding-bottom: 120px;
-  }
   .\36xl\:text-\[60px\] {
     font-size: 60px;
   }
-  .\36xl\:leading-\[65px\] {
-    line-height: 65px;
-  }
-  .\36xl\:leading-\[\] {
-    line-height: ;
-  }
   .\36xl\:leading-\[18px\] {
     line-height: 18px;
+  }
+  .\36xl\:leading-\[65px\] {
+    line-height: 65px;
   }
   .\36xl\:tracking-\[-0\.03em\] {
     letter-spacing: -0.03em;
@@ -2857,9 +2833,6 @@ input[type=tel].input-field {
   .smOnly\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
-  }
-  .smOnly\:pl-4 {
-    padding-left: 1rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1279.98px) {
