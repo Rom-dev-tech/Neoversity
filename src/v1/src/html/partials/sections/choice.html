@@ -1,41 +1,60 @@
 {% set s = choice %}
 
-<section class="{{s.id}}">
+<section class="{{s.id}} relative">
   <div class="container">
     <!-- title -->
     <h2
-      class="mb-[35px] font-unbounded text-[24px] uppercase tracking-[-0.08em] text-[#31343a] md:text-[32px] md:tracking-[-0.06em] xl:text-[52px] xl:leading-[48px] xl:tracking-[-0.04em] 6xl:mr-[70px] 6xl:text-[60px] 6xl:leading-[65px] 6xl:tracking-[-0.03em]">
+      class="mb-[35px] font-unbounded text-[24px] uppercase tracking-[-0.08em] text-[#31343a] md:mb-[45px] md:text-[32px] md:tracking-[-0.06em] xl:mb-10 xl:text-[52px] xl:leading-[48px] xl:tracking-[-0.04em] 6xl:mb-10 6xl:mr-[70px] 6xl:text-[60px] 6xl:leading-[65px] 6xl:tracking-[-0.03em]">
       {{s.title}}
     </h2>
 
     <!-- text -->
     <p
-      class="mb-[35px] font-montserrat text-[14px] uppercase leading-[14px] text-[#31343a] xl:text-[16px] xl:leading-[16px]">
+      class="mb-[35px] font-montserrat text-[14px] uppercase leading-[14px] text-[#31343a] md:mb-[50px] md:ml-auto md:w-[476px] xl:w-[550px] xl:text-[16px] xl:leading-[16px] 6xl:mb-[100px] 6xl:mr-[220px] mdOnly:ml-[150px]">
       {{s.text}}
     </p>
 
     <!-- img -->
-    <picture class="absolute bottom-0 left-0 z-10 w-full">
+    <picture class="mb-[35px] block xl:mb-[50px] 6xl:mb-[90px]">
+      <source
+        media="(min-width: 1920px)"
+        type="image/webp"
+        srcset="
+          ./assets/images/choice/6xl.webp    1x,
+          ./assets/images/choice/6xl@2x.webp 2x
+        " />
       <source
         media="(min-width: 1280px)"
         type="image/webp"
         srcset="
-          ./assets/images/register/register-bg-xl.webp    1x,
-          ./assets/images/register/register-bg-xl@2x.webp 2x
+          ./assets/images/choice/xl.webp    1x,
+          ./assets/images/choice/xl@2x.webp 2x
         " />
       <source
         media="(min-width: 768px)"
         type="image/webp"
         srcset="
-          ./assets/images/register/register-bg-md.webp    1x,
-          ./assets/images/register/register-bg-md@2x.webp 2x
+          ./assets/images/choice/md.webp    1x,
+          ./assets/images/choice/md@2x.webp 2x
         " />
       <img
-        class="w-full"
-        src="./assets/images/register/register-bg.webp"
-        srcset="./assets/images/register/register-bg@2x.webp 2x"
-        alt=""
+        width="395"
+        height="165"
+        class="md:h-[126px] md:w-[707px] xl:h-[165px] xl:w-[1217px] 6xl:w-[1777px]"
+        src="./assets/images/choice/sm.webp"
+        srcset="./assets/images/choice/sm@2x.webp 2x"
+        alt="pic"
         loading="lazy" />
     </picture>
+
+    <!-- button -->
+    <div
+      class="md:flex md:justify-start xl:mr-[30%] xl:justify-end 6xl:mr-0 6xl:justify-center">
+      <button
+        class="h-[70px] w-full bg-[#2400ff] px-10 py-6 font-montserrat text-[16px] font-semibold text-white md:w-[290px] xl:w-[312px] 6xl:h-[86px] 6xl:w-[356px]"
+        type="button">
+        {{s.btnSubmit}}
+      </button>
+    </div>
   </div>
 </section>
