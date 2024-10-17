@@ -1,0 +1,57 @@
+{% set s = reviews %}
+
+<section class="{{s.id}} pb-[80px] relative 6xl:pb-[120px]">
+  <div class="container">
+    <!-- wrapper -->
+    <div class="md:flex md:justify-between">
+      <!-- left-site -->
+      <div class="md:w-[370px] xl:w-[740px] 6xl:w-[865px]">
+        <!-- title -->
+        <h2
+          class="font-unbounded text-[24px] uppercase tracking-[-0.08em] text-[#31343a] md:text-[32px] md:tracking-[-0.06em] xl:mb-2 xl:text-[52px] xl:leading-[48px] xl:tracking-[-0.04em] 6xl:text-[60px] 6xl:leading-[65px] 6xl:tracking-[-0.03em]">
+          {{s.title}}
+        </h2>
+
+        <!-- text -->
+        <div
+          class="flex h-[73px] flex-col justify-end border-l border-black font-montserrat text-[14px] uppercase leading-[14px] text-[#31343a] xl:h-[178px] xl:text-[16px] xl:leading-[16px] smOnly:mb-10 mdOnly:border-none">
+          <p
+            class="pl-4 md:max-w-[275px] md:pl-0 xl:pl-8 6xl:max-w-[310px] 6xl:leading-[18px]">
+            {{s.text}}
+          </p>
+        </div>
+      </div>
+
+      <!-- right-site -->
+      <!-- slider -->
+      <img
+        class="relative z-30 md:w-[290px] xl:mr-[105px] xl:w-[325px] 6xl:mr-[190px] 6xl:h-[766px] 6xl:w-[673px]"
+        src="../assets/images/review/slider.webp"
+        alt="pic" />
+    </div>
+
+    <!-- bg -->
+    <picture class="absolute bottom-0 left-0 z-10 w-full 6xl:h-[193px]">
+      <source
+        media="(min-width: 1280px)"
+        type="image/webp"
+        srcset="
+          ./assets/images/review/bg-xl.webp    1x,
+          ./assets/images/review/bg-xl@2x.webp 2x
+        " />
+      <source
+        media="(min-width: 768px)"
+        type="image/webp"
+        srcset="
+          ./assets/images/review/bg-md.webp    1x,
+          ./assets/images/review/bg-md@2x.webp 2x
+        " />
+      <img
+        class="w-full"
+        src="./assets/images/review/bg.webp"
+        srcset="./assets/images/review/bg@2x.webp 2x"
+        alt=""
+        loading="lazy" />
+    </picture>
+  </div>
+</section>

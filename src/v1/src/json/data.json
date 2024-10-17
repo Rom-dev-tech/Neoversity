@@ -14,6 +14,11 @@
     "bottomText": "Як вам зручніше спілкуватись?",
     "btnSubmit": "/ Відправити"
   },
+  "reviews": {
+    "id": "reviews",
+    "title": "<span class=\"block pl-[100px] md:pl-[60px] xl:pl-[230px]\">// що говорять</span> <span class=\"block tracking-[-0.09em] md:tracking-[-0.06em] xl:tracking-[-0.04em] 6xl:tracking-[-0.03em]\"> студенти Neoversity</span>",
+    "text": "нас обирають айтівці, що вже працюють в топ компаніях та продовжують прагнути більшого"
+  },
   "components": {
     "dateDay": "<?= $START_DATE_DAY ?>",
     "dateMonth": "<?= $START_DATE_MONTH ?>",
