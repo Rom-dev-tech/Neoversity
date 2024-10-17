@@ -1,0 +1,41 @@
+{% set s = choice %}
+
+<section class="{{s.id}}">
+  <div class="container">
+    <!-- title -->
+    <h2
+      class="mb-[35px] font-unbounded text-[24px] uppercase tracking-[-0.08em] text-[#31343a] md:text-[32px] md:tracking-[-0.06em] xl:text-[52px] xl:leading-[48px] xl:tracking-[-0.04em] 6xl:mr-[70px] 6xl:text-[60px] 6xl:leading-[65px] 6xl:tracking-[-0.03em]">
+      {{s.title}}
+    </h2>
+
+    <!-- text -->
+    <p
+      class="mb-[35px] font-montserrat text-[14px] uppercase leading-[14px] text-[#31343a] xl:text-[16px] xl:leading-[16px]">
+      {{s.text}}
+    </p>
+
+    <!-- img -->
+    <picture class="absolute bottom-0 left-0 z-10 w-full">
+      <source
+        media="(min-width: 1280px)"
+        type="image/webp"
+        srcset="
+          ./assets/images/register/register-bg-xl.webp    1x,
+          ./assets/images/register/register-bg-xl@2x.webp 2x
+        " />
+      <source
+        media="(min-width: 768px)"
+        type="image/webp"
+        srcset="
+          ./assets/images/register/register-bg-md.webp    1x,
+          ./assets/images/register/register-bg-md@2x.webp 2x
+        " />
+      <img
+        class="w-full"
+        src="./assets/images/register/register-bg.webp"
+        srcset="./assets/images/register/register-bg@2x.webp 2x"
+        alt=""
+        loading="lazy" />
+    </picture>
+  </div>
+</section>
